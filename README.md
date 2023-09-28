@@ -16,6 +16,10 @@ This Figma plugin allows you to fetch open issues assigned to a specified user f
 4. Click the `Run` button.
 5. The plugin will fetch the open issues from JIRA, create a sticky for each issue, and place them on the current Figma page.
 
+## CORS Proxy Server
+
+In order to overcome CORS restrictions when communicating with the JIRA API, a CORS proxy server is utilized. The server is hosted on Glitch, which is highly recommended for ease of setup and reliability. The code for the server is provided in the `CORS-server.js` file. Ensure to set up the proxy server and update the `proxyURL` variable in the `fetchOpenIssuesFromJIRA` function accordingly.
+
 ## Development
 
 1. Clone the repository.
@@ -25,7 +29,7 @@ This Figma plugin allows you to fetch open issues assigned to a specified user f
 
 ## API
 
-The plugin interacts with a proxy server to communicate with the JIRA API. Ensure to update the `proxyURL`, `jiraParams` and `auth` variables in the `fetchOpenIssuesFromJIRA` function accordingly.
+The plugin interacts with the CORS proxy server to communicate with the JIRA API. Ensure to update the `proxyURL`, `jiraParams` and `auth` variables in the `fetchOpenIssuesFromJIRA` function accordingly.
 
 ## Contributing
 
