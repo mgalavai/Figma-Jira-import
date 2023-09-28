@@ -1,0 +1,18 @@
+{
+  "name": "vira-import",
+  "id": "1242764643603383652",
+  "api": "1.0.0",
+  "main": "code.js",
+  "capabilities": [],
+  "enableProposedApi": false,
+  "editorType": [
+    "figma",
+    "figjam"
+  ],
+  "ui": "ui.html",
+  "networkAccess": {
+    "allowedDomains": ["*"],
+    "reasoning": "iwantitall"
+    
+  }
+}
